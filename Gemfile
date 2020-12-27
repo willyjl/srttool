@@ -1,8 +1,6 @@
 source "http://rubygems.org"
 
-gem 'clamp'
-gem 'srt'
-gem 'progressbar'
+gemspec
 
 group :test do
   gem 'rspec'

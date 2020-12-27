@@ -1,6 +1,6 @@
 # srttool
 
-## Subcommand
+## Subcommands
 
 ### Split
 ``````
