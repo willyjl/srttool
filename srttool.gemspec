@@ -2,8 +2,8 @@ require_relative 'lib/version'
 
 Gem::Specification.new do |g|
   g.name          = 'srttool'
-  g.summary       = 'cli tool for subrip text (srt)'
-  g.description   = 'Srttool is a cli command to manipulate subrip text (srt)'
+  g.summary       = 'cli tool for subrip text (srt) file'
+  g.description   = 'SRTTool is a cli command to manipulate subrip text (.srt) file.'
   g.homepage      = 'https://github.com/willyjl/srttool'
   g.license       = 'MIT'
 
