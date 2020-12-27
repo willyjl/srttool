@@ -1,4 +1,4 @@
-require './src/version'
+require_relative 'lib/version'
 
 Gem::Specification.new do |g|
   g.name          = 'Srttool'
@@ -14,8 +14,8 @@ Gem::Specification.new do |g|
   g.add_development_dependency('srt')
   g.add_development_dependency('progressbar')
 
-  g.require_paths = ['src']
+  g.require_paths = ['lib']
   g.files         = `git.ls-files`.split($\)
-  g.executables   = g.files.grep(%r{^bin/}).map{ |f| File.basename(f) } } 
+  g.executables   = g.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   g.version       = Srttool::VERSION
 end
