@@ -1,7 +1,7 @@
 require_relative 'lib/version'
 
 Gem::Specification.new do |g|
-  g.name          = 'Srttool'
+  g.name          = 'srttool'
   g.summary       = 'cli tool for subrip text (srt)'
   g.description   = 'Srttool is a cli command to manipulate subrip text (srt)'
   g.homepage      = 'https://github.com/willyjl/srttool'
@@ -15,7 +15,8 @@ Gem::Specification.new do |g|
   g.add_development_dependency('progressbar')
 
   g.require_paths = ['lib']
-  g.files         = `git.ls-files`.split($\)
+  g.files         = Dir.glob('lib/**/*') + Dir.glob('bin/*')
   g.executables   = g.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   g.version       = Srttool::VERSION
 end
+
